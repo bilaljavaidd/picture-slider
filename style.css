@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ab5b00;
+}
+
+:root{
+    --background: #ab5b00;
+    --border: #777a7a;
+
+}
+
+.maincontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+
+.imageshow img{
+height: 700px;
+width: 900px;
+border: 6px solid var(--border);
+border-radius: 10px;
+}
+
+h1{
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.443);
+}
+.btnAll{
+
+    display: flex;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 40%;
+}
+
+.btnNext{
+    background: none;
+    color: #000000;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    font-size: large;
+    margin-left: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    z-index: 1;
+    
+}
+.btnPrev{
+    background: none;
+    color: #000000;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.btnPrev:hover {
+ 
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #0000008a;
+    
+    
+    
+}
+.btnNext:hover {
+ 
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #0000008a;
+    
+}
+.btnNext:active ,  .btnPrev:active{
+    scale: 0.9;
+}
+.hidden{
+    display: none;
+}
